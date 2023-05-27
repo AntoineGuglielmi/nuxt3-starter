@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-100p bp768:text-110p bp1024:text-120p font-nunito text-gray-700
+}
+
+.section-body--reg {
+  @apply flex flex-col gap-1e items-start
+}
+
+p {
+  @apply text-1r
+}
+
+code {
+  @apply font-jetBrains bg-gray-200 py-0.25e px-0.5e text-[0.9em] rounded-0.25r
+}
