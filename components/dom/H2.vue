@@ -3,7 +3,7 @@
 </script>
 
 <template>
-	<h1 class="text-4r my-1e font-thin">
+	<h2 class="text-2r my-1e text-gray-400">
 		<slot />
-	</h1>
+	</h2>
 </template>

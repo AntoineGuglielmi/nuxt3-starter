@@ -3,7 +3,10 @@
 </script>
 
 <template>
-  <section class="section--reg">
-		<slot />
+  <section>
+		<slot name="title" />
+		<div class="section-body--reg">
+			<slot/>
+		</div>
 	</section>
 </template>
