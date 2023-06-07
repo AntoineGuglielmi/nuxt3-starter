@@ -39,6 +39,13 @@ module.exports = {
   content: [],
   theme: {
     extend: {
+      screens: {
+        bp640: '640px',
+        bp768: '768px',
+        bp1024: '1024px',
+        bp1280: '1280px',
+        bp1536: '1536px',
+      },
       fontFamily: {
         nunito: 'Nunito, sans-serif'
       },

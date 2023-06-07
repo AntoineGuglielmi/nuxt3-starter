@@ -5,9 +5,13 @@
 @tailwind utilities;
 
 html {
-  @apply text-[100%] font-nunito
+  @apply text-[100%] bp768:text-[110%] bp1024:text-[120%] font-nunito
 }
 
 .section--reg {
   @apply flex flex-col gap-[1rem] items-start text-gray-700
+}
+
+p {
+  @apply text-1r
 }
