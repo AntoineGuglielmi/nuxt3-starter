@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { StringHelper } from '~/utils';
+import { StringHelper, NumberHelper } from '~/utils';
 
 const {
 	ucFirst
@@ -15,6 +15,7 @@ const {
 
 			<p>Section body</p>
 			<p><span class="text-orange-400">{{ ucFirst('string') }}</span> modified by StringHelper().</p>
+			<p>Formatted numbers: {{ NumberHelper().toPrice(13.37) }}, {{ NumberHelper().toPrice(42) }}, {{ NumberHelper().toPercent(0.133) }}</p>
 
 		</LayoutSection>
   </LayoutContainer>
