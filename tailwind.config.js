@@ -84,7 +84,8 @@ module.exports = {
         ...percents
       },
       gap: {
-        ...ems
+        ...ems,
+        ...rems
       },
       borderRadius: {
         ...rems,
