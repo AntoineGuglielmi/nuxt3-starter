@@ -18,6 +18,8 @@ const {
 
 			<template #title><DomH2>Section h2 title</DomH2></template>
 
+			<Icon name="ph:hand-waving-light"/>
+
 			<p>Section body</p>
 			<p><span class="text-orange-400">{{ ucFirst('string') }}</span> modified by <code>StringHelper().ucFirst()</code> method.</p>
 			<p>Formatted numbers, using <code>NumberHelper().toPrice()</code> and <code>NumberHelper().toPercent()</code> methods:</p>

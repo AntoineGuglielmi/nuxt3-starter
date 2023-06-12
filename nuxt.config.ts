@@ -34,7 +34,8 @@ const components = {
 export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-indexes-ts'
+    'nuxt-indexes-ts',
+    'nuxt-icon'
   ],
   tailwindcss,
   indexes,
