@@ -3,5 +3,5 @@
 </script>
 
 <template>
-	<NuxtPage />
+  <Starter/>
 </template>

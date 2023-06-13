@@ -11,7 +11,8 @@ const indexes = {
       dirs: [
         './composables',
         './utils',
-        './classes'
+        './classes',
+        './data'
       ],
       ignore: [
         'index.ts',
