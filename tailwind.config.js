@@ -90,6 +90,9 @@ module.exports = {
       borderRadius: {
         ...rems,
         ...ems
+      },
+      width: {
+        ...slashPercents
       }
     },
   },

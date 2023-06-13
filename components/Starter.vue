@@ -7,6 +7,40 @@ const {
 const {
 	ucFirst
 } = $StringHelper();
+
+const installedModules: Array<{
+	label: string;
+	href: string;
+	more?: Array<{
+		label: string;
+		href: string;
+	}>;
+}> = [
+	{
+		label: 'nuxt-indexes-ts',
+		href: 'https://www.npmjs.com/package/nuxt-indexes-ts'
+	},
+	{
+		label: 'Nuxt Tailwind',
+		href: 'https://tailwindcss.nuxtjs.org/',
+		more: [
+			{
+				label: 'colorgen.dev',
+				href: 'https://colorgen.dev/'
+			}
+		]
+	},
+	{
+		label: 'Nuxt Icon',
+		href: 'https://nuxt.com/modules/icon',
+		more: [
+			{
+				label: 'Icons',
+				href: 'https://icones.js.org/'
+			}
+		]
+	},
+]
 </script>
 
 <template>
@@ -16,18 +50,15 @@ const {
 
 		<LayoutSection>
 
-			<template #title><DomH2>Section h2 title</DomH2></template>
+			<template #title><DomH2>Installed packages/modules:</DomH2></template>
 
-			<Icon name="ph:hand-waving-light"/>
-
-			<p>Section body</p>
-			<p><span class="text-orange-400">{{ ucFirst('string') }}</span> modified by <code>StringHelper().ucFirst()</code> method.</p>
-			<p>Formatted numbers, using <code>NumberHelper().toPrice()</code> and <code>NumberHelper().toPercent()</code> methods:</p>
-			<ul>
-				<li>{{ $NumberHelper().toPrice(13.37) }}</li>
-				<li>{{ $NumberHelper().toPrice(42) }}</li>
-				<li>{{ $NumberHelper().toPercent(0.133) }}</li>
-			</ul>
+			<div class="flex flex-col gap-1r w-1/1">
+				<Modage
+					v-for="(modage, index) in installedModules"
+					:key="index"
+					v-bind="modage"
+				/>
+			</div>
 
 		</LayoutSection>
 	</LayoutContainer>
