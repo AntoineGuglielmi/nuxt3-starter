@@ -12,7 +12,7 @@
 
 <template>
   <div
-		class="bg-slate-100 p-1r"
+		class="bg-slate-100 p-1r h-1/1"
 	>
 		<div class="content">
 			<DomH3 class="font-bold text-orange-400 border-y border-y-orange-400 mt-0">{{ id }}: {{ title }}</DomH3>
