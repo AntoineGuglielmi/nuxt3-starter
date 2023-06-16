@@ -3,5 +3,7 @@
 </script>
 
 <template>
-	<Masonry />
+	<NuxtLayout>
+		<Masonry/>
+	</NuxtLayout>
 </template>

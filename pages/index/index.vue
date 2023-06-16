@@ -3,5 +3,7 @@
 </script>
 
 <template>
-  <Starter/>
+	<NuxtLayout>
+		<Starter/>
+	</NuxtLayout>
 </template>

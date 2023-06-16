@@ -44,7 +44,6 @@ const installedModules: Array<{
 </script>
 
 <template>
-	<LayoutContainer>
 
 		<DomH1>Nuxt 3 starter</DomH1>
 
@@ -61,5 +60,5 @@ const installedModules: Array<{
 			</div>
 
 		</LayoutSection>
-	</LayoutContainer>
+
 </template>
