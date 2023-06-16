@@ -49,7 +49,7 @@ const installedModules: Array<{
 
 		<LayoutSection>
 
-			<template #title><DomH2>Installed packages/modules:</DomH2></template>
+			<template #title><DomH2>Installed packages/modules</DomH2></template>
 
 			<div class="flex flex-col gap-1r w-1/1">
 				<Modage

@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 html {
-  @apply text-100p bp768:text-110p bp1024:text-120p font-nunito text-gray-700
+  @apply text-100p bp768:text-110p bp1024:text-120p font-nunito text-gray-600
 }
 
 .section-body--reg {
