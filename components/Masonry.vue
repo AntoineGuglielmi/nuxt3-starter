@@ -7,6 +7,7 @@ import { topics } from '~/data';
 	<DomH1>Masonry</DomH1>
 
 	<LayoutMasonry
+		class="gap-x-1r"
 		:items="topics"
 	>
 		<template #item="{ item }">
